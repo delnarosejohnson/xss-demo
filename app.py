@@ -16,3 +16,7 @@ def index():
     return render_template('index.html',
                            comments=comments,
                            search_query=search_query)
+@app.route('/hello')
+def hello():
+    return 'hello.html'
+    
